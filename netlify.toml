@@ -1,0 +1,13 @@
+[build]
+    publish = "public"
+    command = "echo No build command"
+    node_bundler = "esbuild"
+
+[dev]
+    publish = "public"
+    node_bundler = "esbuild"
+
+[[redirects]]
+    from = "/*"
+    to = "/.server/src/:splat"
+    status = 200
